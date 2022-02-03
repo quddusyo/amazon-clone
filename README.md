@@ -1,4 +1,6 @@
-# Amazon Clone created with Reactjs following BEM naming convention.
+# Amazon Clone
+
+created with Reactjs following BEM naming convention.
 
 ## NOTE: Before moving forward, make sure React and Nodejs is installed on your local machine.
 

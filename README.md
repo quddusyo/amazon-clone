@@ -7,13 +7,13 @@ created with Reactjs following BEM naming convention.
 ### To install dependancies run:
 
 ```bash
-$ npm i react-dom react-router-dom @mui/material @mui/icons-material @emotion/react @emotion/styled
+$ npm i react-dom react-router-dom react-currency-format @mui/material @mui/icons-material @emotion/react @emotion/styled
 ```
 
 ### or (yarn)
 
 ```bash
-$ yarn install react-dom react-router-dom @mui/material @mui/icons-material @emotion/react @emotion/styled
+$ yarn install react-dom react-router-dom react-currency-format @mui/material @mui/icons-material @emotion/react @emotion/styled
 ```
 
 ### To start project run

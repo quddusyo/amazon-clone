@@ -1,7 +1,18 @@
 export const initialState = {
-    basket: [],
+    basket: [
+        {
+            id: '4',
+            title: 'Apple iPhone 11 64GB - Unlocked',
+            price: 548.00,
+            rating: 4,
+            image: 'https://m.media-amazon.com/images/I/51Bl6-In6fL._AC_SY606_.jpg'
+        }
+    ],
     user: null,
 }
+
+export const getBasketTotal = (basket) =>
+basket?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
     console.log(action);
@@ -14,7 +25,17 @@ const reducer = (state, action) => {
             }
         case 'REMOVE_FROM_BASKET':
             // Logic for Removing item from basket
-            return { state }
+            let newBasket = [...state.basket];
+            const index = state.basket.findIndex((basketItem) => basketItem.id === action.id)
+            if (index >= 0) {
+                //item exists in basket, remove it
+                newBasket.splice(index, 1)
+            } else {
+                console.warn(
+                    `Cant remove product (id: ${action.id}) as its not in basket`
+                )
+            }
+            return { ...state, basket: newBasket }
         default:
             return state;
     }

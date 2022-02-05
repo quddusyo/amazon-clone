@@ -1,13 +1,5 @@
 export const initialState = {
-    basket: [
-        {
-            id: '4',
-            title: 'Apple iPhone 11 64GB - Unlocked',
-            price: 548.00,
-            rating: 4,
-            image: 'https://m.media-amazon.com/images/I/51Bl6-In6fL._AC_SY606_.jpg'
-        }
-    ],
+    basket: [],
     user: null,
 }
 
